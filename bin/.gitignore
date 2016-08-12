@@ -1,3 +1,11 @@
+/net/
+/polymorphism/
+/innerclasses/
+/interfaces/
+/chaptInner/
+/chaptInner2/
+/chaptInterfaces/
+/chaptPolymorphism/
 /chapt06ControllingExecutions/
 /chapt11/
 /chapt12/
@@ -5,11 +13,3 @@
 /chapt4EvrthIsAnObj/
 /chapt5Operators/
 /chapt7Initialization/
-/chaptInner/
-/chaptInterfaces/
-/chaptPolymorphism/
-/innerclasses/
-/interfaces/
-/net/
-/polymorphism/
-/chaptInner2/
