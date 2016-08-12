@@ -1,8 +1,7 @@
 package chaptInner;
 
-//Create a class that holds a String, and has a toString( ) 
-//method that displays this String. Add several instances 
-//of your new class to a Sequence object, then display them.
+//: innerclasses/Sequence.java
+// Holds a sequence of Objects.
 
 interface Selector {
     boolean end();
@@ -15,33 +14,9 @@ interface Selector {
 public class Sequence {
     private Object[] items;
     private int next = 0;
-    private StringHolder str1;
-    private StringHolder str2;
-    
-    private class StringHolder {
-	    private String str;
-	    StringHolder (String str) {
-		this.str = str;
-	    }
-	    public String toString() {
-		return str;
-	    }
-	}
-    
-    public void printString() {
-	System.out.println(str1);
-	System.out.println(str2);
-    }
 
     public Sequence(int size) {
 	items = new Object[size];
-	str1 = new StringHolder("String1");
-	str2 = new StringHolder("String2");
-    }
-    
-    public Sequence(String s1, String s2) {
-	str1 = new StringHolder(s1);
-	str2 = new StringHolder(s2);
     }
 
     public void add(Object x) {
@@ -77,7 +52,5 @@ public class Sequence {
 	    System.out.print(selector.current() + " ");
 	    selector.next();
 	}
-	Sequence seq = new Sequence("Happy", "day");
-	seq.printString();
     }
 }
