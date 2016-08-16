@@ -40,27 +40,17 @@ class Rodent {
 	System.out.println("Rodent");
     }
 
-    public void eat() {
-    }
-
-    public void sleep() {
-    }
+    public void eat() {}
+    public void sleep() {}
 }
 
 class Mouse extends Rodent {
-    Mouse() {
-	System.out.println("Mouse");
-    }
+    Mouse() {System.out.println("Mouse");}
 
     @Override
-    public void eat() {
-	System.out.println("Mouse.eat()");
-    }
-
+    public void eat() {System.out.println("Mouse.eat()");}
     @Override
-    public void sleep() {
-	System.out.println("Mouse.sleep()");
-    }
+    public void sleep() {System.out.println("Mouse.sleep()");}
 }
 
 class Gerbil extends Rodent {
@@ -69,33 +59,19 @@ class Gerbil extends Rodent {
     Mouse m = new Mouse();
     Rodent r = new Rodent();
 
-    Gerbil() {
-	System.out.println("Gerbil");
-    }
+    Gerbil() {System.out.println("Gerbil");}
 
     @Override
-    public void eat() {
-	System.out.println("Gerbil.eat()");
-    }
-
+    public void eat() {System.out.println("Gerbil.eat()");}
     @Override
-    public void sleep() {
-	System.out.println("Gerbil.sleep()");
-    }
+    public void sleep() {System.out.println("Gerbil.sleep()");}
 }
 
 class Hamster extends Rodent {
-    Hamster() {
-	System.out.println("Hamster");
-    }
+    Hamster() {System.out.println("Hamster");}
 
     @Override
-    public void eat() {
-	System.out.println("Hamster.eat()");
-    }
-
+    public void eat() {System.out.println("Hamster.eat()");}
     @Override
-    public void sleep() {
-	System.out.println("Hamster.sleep()");
-    }
+    public void sleep() {System.out.println("Hamster.sleep()");}
 }

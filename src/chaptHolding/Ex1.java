@@ -23,7 +23,7 @@ public class Ex1 {
 }
 
 class Gerbil {
-    private int gerbilNumber;
+    protected int gerbilNumber;
     
     public Gerbil(int i) {
 	gerbilNumber = i;
