@@ -30,7 +30,11 @@ class Gerbil {
     }
     
     public void hop() {
-	System.out.println("Gerbil #" + gerbilNumber + 
+	System.out.println(this + 
 		" is hopping");
+    }
+    
+    public String toString() {
+	return "Gerbil#" + gerbilNumber;
     }
 }
