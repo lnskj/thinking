@@ -19,23 +19,35 @@ public class Ex22 {
 	System.out.println();
 	
 	Set<Word> wordSet = new HashSet<>();
-	ListIterator<String> it = words.listIterator(1);
-	while(it.hasNext()) {
-	    int prev = it.previousIndex();
-	    String s = it.next();
-	    
-	    String sprev = words.get(prev);
+	ListIterator<String> it = words.listIterator();
+/*	while(it.hasNext()) {
+			String s = (String)it.next();
+			int count = 0;			
+			for(int i = 0; i < words.size(); i++) {
+				if(s.equals(words.get(i))) count++;
+			}
+			Word w = new Word(s, count);
+			wordObjects.add(w);
+		}*/
+	int ind = 0;
+	String compared = words.get(0);
+	while (it.hasNext()) {
 	    int count = 0;
-	    if (s.equals(sprev)) {
-		count++;
-		continue;
+	    for (int i = ind; i < words.size(); i++) {
+		if (compared.equals(words.get(i))) {
+		    count++;
+		    continue;
+		} else {
+		    ind = i;
+		    Word w = new Word(compared, count);
+		    wordSet.add(w);
+		    compared = words.get(i);
+		    break;
+		}
 	    }
-	    for (int i = 0; i < words.size(); i++) {
-		if (s.equals(words.get(i))) count++;		
-	    }
-	    Word w = new Word(s,count);
-	    wordSet.add(w);
 	}
+	
+	
 	System.out.println("Word count: " + wordSet);
     }
 
