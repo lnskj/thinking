@@ -1,5 +1,5 @@
 package chaptHolding;
-// !!! не добавляется первое слово!!!
+// !!! first word doesn't add!
 
 import java.util.*;
 import net.mindview.util.TextFile;
